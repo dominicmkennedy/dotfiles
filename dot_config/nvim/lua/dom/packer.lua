@@ -17,10 +17,7 @@ return require('packer').startup(function(use)
   }
   use('tpope/vim-fugitive')
   use('farmergreg/vim-lastplace')
-  use({
-    'lukas-reineke/indent-blankline.nvim',
-    branch = 'v2.6.2',
-  })
+  use('lukas-reineke/indent-blankline.nvim')
   use {
     'VonHeikemen/lsp-zero.nvim',
     branch = 'v2.x',
