@@ -1,9 +1,12 @@
 local lspconfig = require 'lspconfig'
+
 lspconfig.hls.setup({
   cmd = { '/home/dom/.ghcup/bin/haskell-language-server-wrapper', "--lsp" },
   -- cmd = { 'nix-shell', '--command', 'haskell-language-server --lsp' },
   filetypes = { 'haskell', 'lhaskell', 'cabal' },
 })
+
+lspconfig.racket_langserver.setup{}
 
 -- lspconfig.grammarly.setup({
 --   init_options = { clientId = "client_BaDkMgx4X19X9UxxYRCXZo" },
